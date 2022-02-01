@@ -53,4 +53,6 @@ public class Isbn10 : ValueObject<Isbn10>
     protected override bool EqualsCore(Isbn10 other) => Value == other.Value;
 
     protected override int GetHashCodeCore() => Value.GetHashCode();
+    
+    public static implicit operator string(Isbn10 x) => x.Value;
 }
