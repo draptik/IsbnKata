@@ -24,7 +24,7 @@ public class Isbn10 : ValueObject<Isbn10>
     private static Result<string> CheckXOnlyAtLastPosition(string s) =>
         Regex.Match(s, @"\d{9}(?:\d|X|x)").Success 
             ? s 
-            : Result.Failure<string>("invalid isbn13 format. 9 numbers followed by number or X");
+            : Result.Failure<string>("invalid isbn10 format. 9 numbers followed by number or X");
 
     private static Result<string> CheckSum(string s)
     {
