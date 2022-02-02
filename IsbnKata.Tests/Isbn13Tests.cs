@@ -16,7 +16,7 @@ public class Isbn13Tests
         if (isValid)
         {
             result.Should().BeSuccess();
-            result.Value.Should().Be(expected);
+            ((string)result.Value).Should().Be(expected);
         }
         else
         {

@@ -1,8 +1,7 @@
-using System.Linq;
 using System.Text.RegularExpressions;
 using CSharpFunctionalExtensions;
 
-namespace IsbnKata.Tests;
+namespace IsbnKata;
 
 public class Isbn10 : ValueObject<Isbn10>
 {
